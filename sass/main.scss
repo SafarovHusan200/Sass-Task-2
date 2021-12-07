@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$border: 1px solid black;
+$bgcolor: #fffdf6;
+body{
+    font-family: sans-serif;
+    .container{
+        width: 1000px;
+        height: 400px;
+        margin: 3rem auto;
+        .box:nth-child(1){
+            h1{
+                margin: 1rem auto;
+                text-align: center;
+            }
+        }
+        .box:nth-child(2){
+            margin-top: 7rem;
+            display: flex;
+            justify-content: space-around;
+            .item{
+                background-color: $bgcolor;
+                width: 270px;
+                height: 200px;
+                box-shadow: 0 1px 2px rgb(150, 150, 150);
+                &:nth-child(1){
+                    box-shadow: 0 5px 45px rgb(184, 184, 184) ;
+                }
+                img{
+                    display: block;
+                    margin: -4.5rem auto;
+                    width: 130px;
+                }
+                h3{
+                    display: block;
+                    text-align: center;
+                    margin: 5.8rem 0 0 0;
+                }
+                small{
+                    display: block;
+                    margin-top: 5px;
+                    text-align: center;
+                    color: #f28753;
+                }
+            }
+        }
+        
+    }
+
+    .wrapper{
+        position: relative;
+        width: 1200px;
+        height: 590px;
+        margin: 0 auto;
+        overflow: hidden;
+        .block_one{
+            position: absolute;
+            top: -75px;
+            left: -90px;
+            width: 250px;
+            height: 250px;
+            // border: $border;
+            background-color: #fef0e8;
+            border-radius: 0 180px 0 0;
+        }
+        .block_two{
+            position: absolute;
+            bottom: -125px;
+            right: -30px;
+            width: 250px;
+            height: 250px;
+            // border: $border;
+            background-color: #fef0e8;
+            border-radius: 150px 0 0 0;
+        }
+    }
+
+}
